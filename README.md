@@ -1,1 +1,2 @@
 # cmsc508-fa2023-hw7-template
+In this project, I will be building a database that shows a company wide resume. I will then be explaining the tables and relations within the database in a quarto document.
