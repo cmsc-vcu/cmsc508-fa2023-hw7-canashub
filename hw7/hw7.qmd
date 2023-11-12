@@ -241,7 +241,7 @@ df
 #| eval: true
 sql = f"""
 select people_last_name, people_first_name, people_email from people
-order by people_last_name;
+order by ABS(people_last_name);
 """
 
 try:
@@ -303,7 +303,7 @@ df
 #| echo: false
 #| eval: true
 sql = f"""
-select roles_name from roles
+select roles_name, people.people_last_name, people.people_first_name from roles
 left join peopleroles
 on roles.roles_id = peopleroles.role_id
 left join people
